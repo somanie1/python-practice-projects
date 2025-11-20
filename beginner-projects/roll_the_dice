@@ -1,0 +1,17 @@
+import random #we import the library first
+
+while True: #all our code must be placed in a while loop to enebele it run continuosly.
+
+    choice = input("Roll the dice? y/n: ").lower()  #we assign our input to the valiable 'choice'
+    die1 = random.randint(1, 6)
+    die2 = random.randint(1, 6)
+
+    if choice == "y":  #first condition statement: this allows our dice to roll when the player chooses 'y'
+        print(f'({die1}, {die2}')
+
+    elif choice == "n":  #second condition statement: this returns the text 'goodbye' and stops the code from running further when choice is 'n'
+        print("Goodbye!")
+        break
+
+    else: #any other choice asides 'y' or 'n' will be regarded as an error and the following text will be returned.
+        print("invalid choice")
